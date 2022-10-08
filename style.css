@@ -7,17 +7,15 @@
     padding: 0;
     margin: 0;
     font-size: 16px;
-    font-family: poppins, sans-serif;
     box-sizing: border-box;
 }
-/* hr{
-    border-top: 1px solid lightgray;
-} */
+
 h1 {
     font-weight: 600;
     font-size: 2.15rem;
     text-align: center;
     color: var(--color-title);
+    font-family: poppins, sans-serif;
 
     margin-bottom: 25px;
 }
@@ -30,40 +28,56 @@ main {
     justify-content: center;
     align-items: center;
 }   
-main #quote-section{
+main #quote-section {
     width: 600px;
     padding: 30px;
     border-radius: 15px;
     background: white;
+
+    box-shadow: 0 12px 35px rgb(0 0 0 / 10%);
 }
-main #quote-section .quote-area p{
+main #quote-section .quote-area p {
     text-align: center;
     font-size: 1.35rem;
     margin-bottom: 20px;
+    font-family: poppins, sans-serif;
+
 }
-main #quote-section .quote-area p::before{
+main #quote-section .quote-area p::before {
     content: '❝';
     font-size: 20px;
     margin-right: 15px;
 }
-main #quote-section .quote-area p::after{
+main #quote-section .quote-area p::after {
     content: '❞';
     font-size: 20px;
     margin-left: 15px;
 }
-main #quote-section .author-area p{
+main #quote-section .author-area p {
     text-align: right;
     margin-bottom: 25px;
+    font-style: italic;
+    color: #202842;
+    font-size: 1.2rem;
+    font-family: poppins, sans-serif;
+
 }
-main #quote-section .author-area p::before{
+main #quote-section .author-area p::before {
     content: '━';
     margin-right: 10px;
 }
 .button-area {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px ;
+
 
     border-top: 1px solid #ccc;
+}
+.button-area .newQuote-box{
+    font-family: poppins, sans-serif;
+
 }
 .button-area #newQuote {
     padding: 13px 22px;
@@ -73,5 +87,27 @@ main #quote-section .author-area p::before{
     background-color: var(--background-color);
     color: white;
 
-    margin-top: 20px ;
+    user-select: none;
+
+    cursor: pointer;
+}
+.button-area .clipBoard-box button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 40px;
+    width: 40px;
+
+    background-color: transparent;
+    border: 2px solid var(--background-color);
+    border-radius: 50%;
+    color: var(--background-color);
+
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+.button-area .clipBoard-box button:hover {
+    background-color: var(--background-color);
+    color: white;
 }

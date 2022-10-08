@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,12 +14,15 @@
         <section id="quote-section">
             <div class="quote-area">
                 <h1>Quote of the Day</h1>
-                <p>Never give up because you never know if the next try is going to be the one that works.</p>
+                <p id="textQuote"></p>
             </div>
             <div class="author-area">
-                <p>David Seamans</p>
+                <p id="authQuote"></p>
             </div>
             <div class="button-area">
+                <div class="clipBoard-box">
+                    <button id="clipboard"><i class="icon-copy icon-1x"></i></button> 
+                </div>
                 <div class="newQuote-box">
                     <button id="newQuote">New Quote</button>
                 </div>
