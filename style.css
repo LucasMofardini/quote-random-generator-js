@@ -112,3 +112,11 @@ main #quote-section .author-area p::before {
     background-color: var(--background-color);
     color: white;
 }
+#lucasmofardini{
+    font-family: poppins, sans-serif;
+    color: white;
+    margin-top: 10px;
+}
+#lucasmofardini a{
+    color: white;
+}
